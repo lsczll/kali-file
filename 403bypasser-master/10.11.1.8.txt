@@ -1,0 +1,435 @@
+POST --> http://10.11.1.8:631/                                                                      STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631////                                                                    STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/.//./                                                                  STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/%2e/                                                                   STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631//                                                                      STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/..;/                                                                   STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631//..;/                                                                  STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/%20                                                                    STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/%09                                                                    STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/%00                                                                    STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/.json                                                                  STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/.css                                                                   STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/.html                                                                  STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/?                                                                      STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/??                                                                     STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/???                                                                    STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/?testparam                                                             STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/#                                                                      STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631/#test                                                                  STATUS: 403	SIZE: 150
+GET --> http://10.11.1.8:631//.                                                                     STATUS: 403	SIZE: 150
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Custom-IP-Authorization': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forwarded-For': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Forward-For': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-IP': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Originating-IP': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Remote-Addr': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Client-IP': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': 'localhost'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': 'localhost:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': 'localhost:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '127.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '127.0.0.1:80'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '127.0.0.1:443'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '2130706433'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '0x7F000001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '0177.0000.0000.0001'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '127.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '10.0.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '10.0.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '172.16.0.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '172.16.0.1'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '192.168.1.0'}
+
+GET --> http://10.11.1.8:631/                                                                       STATUS: 403	SIZE: 150
+Header= {'X-Real-IP': '192.168.1.1'}
+
+GET --> http://10.11.1.8:631                                                                        STATUS: 403	SIZE: 150
+Header= {'X-Original-URL': '/'}
+
+GET --> http://10.11.1.8:631                                                                        STATUS: 403	SIZE: 150
+Header= {'X-Rewrite-URL': '/'}
